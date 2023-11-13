@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lora/Ubuntu:300,700&display=swap" rel="stylesheet"> -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/home.js"></script>
+        <title>Aditya Baliga</title>
+    </head>
+    <body>
+        <div class="overlay container">
+            <header class="navbar">
+                <div class="site-title">
+                    <div class="title-image-div">
+                        <a href="index.html"><img src="images/me1.jpg " class="title-image" alt="Aditya Baliga"></a>
+                    </div>
+                    <div class="site-title-info">
+                        <h1>ADITYA U BALIGA</h1>
+                        <p class="subtitle">A blog/portfolio encompassing my life</p>
+                    </div>
+                    <div class="menubar">
+                        <span class="material-icons menubar-icon" onclick="menubarShow()">menu</span>
+                    </div>
+                </div>
+                <nav class="navbar-menu" id="nvbm">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="current-page">Home</a></li>
+                        <li><a href="about-me.html">Blog</a></li>
+                        <li><a href="recent-posts.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="overlay-about"></div>
+            <div class="overlay-arrow">
+                <span class="overlay-arrow-symbol" onclick="closeOverlay()">
+                    <span class="material-icons overlay-arrow-symbol-up">keyboard_double_arrow_up</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="main container">
+            <div class="main-top">
+                <div class="articles">
+                </div>
+                <div class="fun">
+                    <img src="images/football.png" alt="Football" class="bounce-image">
+                </div>
+            </div>
+            <section class="contact" id="contact">
+
+                <div class="contact-heading">
+                <h1 class="section-header">Contact</h1>
+                </div>
+                
+                <div class="contact-wrapper">                  
+                  <form id="contact-form" class="form-horizontal" role="form">
+                     
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                      </div>
+                    </div>
+                    <textarea class="form-control form-message" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                    
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                      <div class="alt-send-button">
+                        <i class="material-icons">ios_share</i><span class="send-text">SEND</span>
+                      </div>
+                    </button>
+                    
+                  </form>
+                                    
+                    <div class="direct-contact-container">
+                      <ul class="contact-list">
+                        <li class="contact-list-item">
+                          <div class="contact-list-symbols"><span class="material-icons">location_on</span></div>
+                          <div class="contact-list-text"><span>Kochi, Kerala</span></div>
+                        </li>
+                        <li class="contact-list-item">
+                          <div class="contact-list-symbols"><span class="material-icons">phone_iphone</span></div>
+                          <div class="contact-list-text"><span><a href="tel:+91 9074399408" title="Give me a call">(+91) 9074399408</a></span</div>
+                        </li>
+                        <li class="contact-list-item">
+                          <div class="contact-list-symbols"><span class="material-icons">contact_mail</span></div>
+                          <div class="contact-list-text"><span><a href="mailto:aditbaliga@gmail.com" title="Send me an email">aditbaliga@gmail.com</a></span></div>
+                        </li>
+                      </ul>
+              
+                      <hr>
+                      <ul class="social-media-list">
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li> 
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        </li> 
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>     
+                      </ul>
+                      <hr>
+              
+                      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                    </div>
+                </div>
+              </section>  
+                
+                
+        </div>
+        
+        <footer>
+            <div class="socials">
+                <div class="socials-info"></div>
+                <div class="social-media">
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-github"></a>
+                </div>
+                <div class="copyright-div">
+                    <div>
+                        <span class="material-icons copyright">copyright</span>
+                    </div>
+                    <div>
+                        <span class="copyright-text">Aditya U Baliga</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
