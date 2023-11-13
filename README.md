@@ -1,2 +1,1 @@
-# BallAd15.github.io
-A personal portfolio/blog  website
+# Aditya Baliga's Personal Portfolio/Blog Website
