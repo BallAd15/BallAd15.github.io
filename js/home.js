@@ -3,7 +3,7 @@ function openOverlay() {
   }
   
 function closeOverlay() {
-    document.getElementsByClassName("overlay")[0].style.height = "12%";
+    document.getElementsByClassName("overlay")[0].style.height = "20%";
     document.getElementsByClassName("overlay-about")[0].style.display = "none";
     document.getElementsByClassName("overlay-arrow")[0].style.display = "none";
     document.getElementsByClassName("navbar")[0].style.display = "flex";
