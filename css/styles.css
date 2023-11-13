@@ -29,6 +29,7 @@ a {
 
 .navbar {
     min-height: 8vh;
+    height: auto;
     width: 100%;
     max-width: 990px;
     display: none;
@@ -296,7 +297,6 @@ body {
 .contact-list-item{
     padding: 1em 0;
     display: flex;
-    margin-left:2em;
 }
 
 .contact-list-item:hover .contact-list-text, 
