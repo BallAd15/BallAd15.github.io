@@ -29,15 +29,16 @@ function menubarShow(){
 
 //Smooth scrolling when redirecting
 document.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === 'A' && e.target.classList.contains('smooth-scroll')) {
         e.preventDefault();
-        var targetId = e.target.getAttribute('href').substring(1); 
-        var targetSection = document.getElementById(targetId); 
+        var targetId = e.target.getAttribute('href').substring(1);
+        var targetSection = document.getElementById(targetId);
         if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth'}); // 4000ms -> 2s
+            targetSection.scrollIntoView({ behavior: 'smooth' });
         }
     }
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const formGroups = document.querySelectorAll(".form-group");
@@ -57,6 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
 window.onload = function() {
-    closeOverlay();
-    /*openOverlay();*/
+    /*closeOverlay();*/
+    openOverlay();
 }
