@@ -453,19 +453,4 @@ body {
     .direct-contact-container{
         margin:0 auto;
     }
-
-    .social-media-list .fa-linkedin{
-        color: #007bb5;
-    }
-    .social-media-list .fa-instagram{
-        color: rgb(244,0,131);
-    }
-
-    .social-media-list .fa-pinterest{
-        color: #cb2027;
-    }
-
-    .social-media-list .fa-github{
-        color: #9B59B6;
-    }
 }
