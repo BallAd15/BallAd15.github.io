@@ -15,7 +15,7 @@ function menubarShow(){
     if ( hiddenDiv.classList.contains('navbar-menu')) {
         hiddenDiv.classList.remove('navbar-menu');
         hiddenDiv.classList.add('visible');
-        document.getElementsByClassName("overlay")[0].style.height = "50em";
+        document.getElementsByClassName("overlay")[0].style.height = "21em";
         document.getElementsByClassName("site-title")[0].style.borderBottom = "1px solid rgb(99, 95, 95)";
         menuIcon.textContent="expand_less"
     } else {
@@ -39,6 +39,14 @@ document.addEventListener('click', function (e) {
     }
 });
 
+//Football bouncing effect
+function bounceFootball() {
+    var football = document.querySelector('.fun-animation-image');
+    football.style.animation = 'none';  // Remove the current animation
+    setTimeout(function() {
+        football.style.animation = 'bounce 1.5s ease 1';  // Add the bounce animation again
+    }, 10);
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const formGroups = document.querySelectorAll(".form-group");
@@ -58,6 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
 window.onload = function() {
-    /*closeOverlay();*/
-    openOverlay();
+    closeOverlay();
+    /*openOverlay();*/
 }
