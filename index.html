@@ -28,14 +28,40 @@
                 <nav class="navbar-menu" id="nvbm">
                     <ul class="nav-list">
                         <li><a href="index.html" class="current-page">Home</a></li>
+                        <li><a href="#projects" class="smooth-scroll">Projects</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="resume.html">Resume</a></li>
                         <li><a href="#contact" class="smooth-scroll">Contact</a></li>
                     </ul>
                 </nav>
             </header>
-            <div class="overlay-about"></div>
+            <div class="overlay-about">
+              <div class="body-overlay">
+                <section class="intro">
+                  <div class="intro-content">
+                    <h1 class="title">Aditya U Baliga</h1>
+                    <p class="description">
+                      Hi! I'm a <span class="collage-art">Machine Learning Engineer</span>, Who's committed to building new applications. 
+                      I've created this blog to curate all my work in a single place. Afterall, To blog, is to share, to connect, to create,
+                      and to inspire! 
+                    </p>
+                    <a href="#" class="btn">See More</a>
+                  </div>
+            
+                  <div class="card-container">
+                    <div style="--r: -15; --y: 40; --x: 50" class="card">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/585555c4-71c1-4c4a-b551-a2895047fbba" alt="" />
+                    </div>
+                    <div style="--r: 5; --y: -30; --x: 30" class="card">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/5ede54b2-dfec-4f5e-81b1-df8089481b08" alt="" />
+                    </div>
+                    <div style="--r: 15; --y: 50; --x: 0" class="card">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4548f9dd-e67e-4585-8a2d-821c40e3471b" alt="" />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
             <div class="overlay-arrow">
                 <span class="overlay-arrow-symbol" onclick="closeOverlay()">
                     <span class="material-icons overlay-arrow-symbol-up">keyboard_double_arrow_up</span>
@@ -65,7 +91,11 @@
                 </div>
             </div>
 
-            <section class="project-slider">
+            <section class="project-slider" id="projects">
+              <div class="project-heading">
+                <h1 class="section-header">Projects</h1>
+                </div>
+
               <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-icons">
                   chevron_left
@@ -128,7 +158,7 @@
                 </div>
                 
                 <div class="contact-wrapper">                  
-                  <form id="contact-form" class="form-horizontal" role="form">
+                  <form id="contact-form" class="form-horizontal" role="form" action="process.php" method="POST">
                      
                     <div class="form-group">
                       <div class="col-sm-12">
@@ -137,12 +167,12 @@
                     </div>
                     <div class="form-group">
                       <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                       </div>
                     </div>
                     <textarea class="form-control form-message" rows="10" placeholder="MESSAGE" name="message" required></textarea>
                     
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <button class="btn-primary send-button" id="submit" type="submit" value="SEND">
                       <div class="alt-send-button">
                         <i class="material-icons">ios_share</i><span class="send-text">SEND</span>
                       </div>
