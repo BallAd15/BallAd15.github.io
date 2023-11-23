@@ -11,7 +11,7 @@ a {
 }
 
 .current-page{
-    border-bottom: 1px solid blanchedalmond;
+    border-bottom: 1px solid blanchedalmond; 
 }
 
 /* =======================
@@ -349,7 +349,6 @@ a {
   .intro-content {
     grid-area: intro-content;
     padding-right: 0;
-    text-align: center;
   }
 
   .card-container {
@@ -537,7 +536,6 @@ nav ul{
 
 .site-title h1{
     color: rgb(248,201,197);
-    color: gold;
     font-size: 1.5em;
 }
 
@@ -996,6 +994,13 @@ body {
 }
 
 @media (max-width: 990px) {
+
+    .overlay-arrow{
+      align-items: center;
+      justify-content: end;
+      margin-right: 5em;
+    }
+
     .navbar{
         flex-direction: column;
         margin:0;
@@ -1062,9 +1067,32 @@ body {
 
     
     .contact-wrapper{
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
+    .form-horizontal{
+      width: 80%;
+    }
+
+    .direct-contact-container{
+      width: 80%;
+    }
+
+    .contact-list-item {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .contact-list-symbols{
+      display: block;
+    }
+    .contact-list-text{
+      display: block;
+    }
+
 
     .form-horizontal{
         margin: 0 auto;
