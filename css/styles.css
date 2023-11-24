@@ -606,6 +606,7 @@ nav ul{
   height: 100%;
   position: relative;
   width: 80%;
+  border: 1px solid #AAAAA;
 }
 
 .top-articles-image {
@@ -652,7 +653,7 @@ nav ul{
 .top-articles-overlay-text-info{
   height: 30%;
   display: flex;
-  align-items:end;
+  margin-bottom: 0.2em;
 }
 
 .top-articles-overlay-text-heading{
@@ -669,9 +670,11 @@ nav ul{
 
 .top-articles-overlay-more{
   width: 30%;
+  margin: auto;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .top-articles-overlay-more-button{
@@ -679,15 +682,17 @@ nav ul{
   width: 80%;
   background: #90ee90;
   border-radius: 5%;
-  text-align: center;
+  font-size: 1em;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.9em;
+  flex-direction: column;
 }
 
 .top-articles-overlay-more-button p{
   color: black;
+  display: block;
 }
 
 .top-articles-overlay-more-button:hover{
@@ -1218,6 +1223,10 @@ body {
     .top-articles-container{
       margin: 0 auto;
       width: 65%;
+    }
+
+    .top-article-button-mobile{
+      display: block;
     }
 
     .fun{
