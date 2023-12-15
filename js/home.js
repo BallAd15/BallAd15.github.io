@@ -1,13 +1,15 @@
 function openOverlay() {
     document.getElementsByClassName("overlay")[0].style.height = "100vh";
+    document.getElementsByClassName("overlay")[0].style.marginTop = "0";
   }
   
 function closeOverlay() {
     document.getElementsByClassName("overlay")[0].style.height = "7em";
-    document.getElementsByClassName("overlay")[0].style.background = "rgb(18, 23, 42)";
+    document.getElementsByClassName("overlay")[0].style.background = "rgb(0, 0, 0)";
     document.getElementsByClassName("overlay-about")[0].style.display = "none";
     document.getElementsByClassName("overlay-arrow")[0].style.display = "none";
     document.getElementsByClassName("navbar")[0].style.display = "flex";
+    document.getElementsByClassName("overlay")[0].style.marginTop = "1em";
 }
 
 function menubarShow(){
