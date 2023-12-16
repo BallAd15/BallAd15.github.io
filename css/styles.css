@@ -662,7 +662,7 @@ nav ul{
   height: 35%;
   color: #AAAAAA;
   font-size: 0.7em;
-  padding-top: 0.4em;
+  margin-top: 0.4em;
 }
 
 .top-articles-overlay-text-heading{
@@ -686,6 +686,7 @@ nav ul{
   border-radius: 5%;
   font-size: 0.85em;
   margin: 0 auto;
+  margin-right: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -821,6 +822,7 @@ body {
     height: 200px; /* 253*200*/
     /*-webkit-filter: grayscale(100%); 
     filter: grayscale(100%); */
+    overflow: hidden;
     margin-bottom: 5px;
     border: 1px white solid;
 }
@@ -1277,6 +1279,41 @@ body {
 
     .top-article-button-mobile{
       display: block;
+    }
+
+    .top-articles-container-tag{
+      height: 2em;
+      width: 4em;
+      top: 1em;
+      right: 1em;
+      border-radius: 12.5%;
+      font-size: 0.5em;
+    }  
+  
+    .top-articles-overlay-text-info{
+      height: 35%;
+      color: #AAAAAA;
+      font-size: 0.5em;
+      margin-top: 0.5em;
+    }
+    .top-articles-overlay-text-heading{
+      height: 65%;
+      font-size: 0.8em;
+    }
+    
+    .top-articles-overlay-more{
+      width: 30%;
+      margin: auto;
+      height: 100%;
+    }
+    
+    .top-articles-overlay-more-button{
+      height: 1.85em;
+      width: 4em;
+      background: #337AB7;
+      border-radius: 5%;
+      font-size: 0.7em;
+      margin-right: 1.25em;
     }
 
     .fun{
