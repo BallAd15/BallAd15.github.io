@@ -9,6 +9,7 @@
         <script src="js/home.js"></script>
         <title>Aditya Baliga | Portfolio</title>
         <link rel="icon" href="images/favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="overlay container">
@@ -169,8 +170,7 @@
                 </div>
                 
                 <div class="contact-wrapper">                  
-                  <form id="contact-form" class="form-horizontal" role="form" action="api/mailing.php" method="post">
-                     
+                  <form id="contact-form" class="form-horizontal" role="form">              
                     <div class="form-group">
                       <div class="col-sm-12">
                         <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
@@ -186,7 +186,7 @@
                         <input type="email" class="form-control" id="email" placeholder="YOUR EMAIL" name="email" value="" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                       </div>
                     </div>
-                    <textarea class="form-control form-message" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                    <textarea class="form-control form-message" rows="10" id="message" placeholder="MESSAGE" name="message" required></textarea>
                     
                     <button class="btn-primary send-button" name="submit" id="submit" type="submit" value="SEND">
                       <div class="alt-send-button">
@@ -258,6 +258,29 @@
         </footer>
     </body>
 </html>
+
+<script>
+var message = "";
+$(document).ready(function(){
+  $("#submit").on("click", function() {
+    alert('Thanks for the email, I\'ll be in touch promptly.');
+      //message = $("#contact-form").serialize();
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var subject = $("#subject").val();
+      var description = $("#message").val();
+      var message = `Name: ${name} \nEmail: ${email} \nSubject: ${subject} \nMessage: ${description}`;
+      $.ajax({
+          url: "https://formspree.io/f/xbjnrljv", 
+          method: "POST",
+          data: {message: message},
+          dataType: "json"
+      });
+    console.log(message);
+    return false;
+  });
+});
+</script>
 
 <!--
                 <div class="fun">
