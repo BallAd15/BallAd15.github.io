@@ -593,6 +593,9 @@ nav ul{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    border-bottom: 1px white solid;
+    padding-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 
@@ -1036,6 +1039,9 @@ body {
 
 .direct-contact-container{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /*border: 2rem solid rgb(18, 23, 42);*/
     border: 2rem solid black;
 }
@@ -1291,6 +1297,10 @@ body {
         cursor: pointer;
     }
 
+    .fun-quotes{
+      margin: 0 auto;
+      margin-top: 2em;
+    }
     
     .contact-wrapper{
         display: flex;
