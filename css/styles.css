@@ -654,15 +654,15 @@ nav ul{
   width: 70%;
   color: white;
   padding-left: 1em;
-  display: inline-block;
-  vertical-align: bottom;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-articles-overlay-text-info{
   height: 35%;
   color: #AAAAAA;
-  font-size: 0.6em;
-  padding-top: 0.3em;
+  font-size: 0.7em;
+  padding-top: 0.4em;
 }
 
 .top-articles-overlay-text-heading{
@@ -680,11 +680,11 @@ nav ul{
 }
 
 .top-articles-overlay-more-button{
-  height: 50%;
-  width: 80%;
+  height: 2.25em;
+  width: 6em;
   background: #337AB7;
   border-radius: 5%;
-  font-size: 0.65em;
+  font-size: 0.85em;
   margin: 0 auto;
   display: flex;
   align-items: center;
