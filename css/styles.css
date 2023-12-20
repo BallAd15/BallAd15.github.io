@@ -1205,6 +1205,16 @@ body {
   width: 100%;
 }
 
+/* ===================== BLOG =====================*/
+
+.medium-articles{
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-bottom: 3em;
+}
+
 @media (max-width: 990px) {
 
     .overlay-arrow{
